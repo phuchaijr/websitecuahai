@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Hàng chất lượng</title>
+    <link rel="stylesheet" href="banhang.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Chào mừng bạn đến với cửa hàng của Phúc Hãi!</h1>
+      <button id="cart-btn">Giỏ hàng (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <section id="products">
+      <h2>Sản phẩm ăn trước khi đi</h2>
+      <div id="product-list" class="product-list">
+        <!-- Sản phẩm sẽ được thêm bằng JavaScript -->
+      </div>
+    </section>
+    <section id="other-products">
+      <h2>Các mặt hàng xuất khẩu qua cam của hãi</h2>
+      <div id="other-product-list" class="product-list">
+        <!-- Mặt hàng sẽ được thêm bằng JavaScript -->
+      </div>
+      <!-- Modal -->
+      <div id="product-modal" class="modal">
+        <div class="modal-content">
+          <span id="close-modal-btn" class="close-btn">&times;</span>
+          <h2 id="modal-product-name"></h2>
+          <img id="modal-product-image" alt="Product Image" />
+          <p id="modal-product-price"></p>
+          <p id="modal-product-description"></p>
+          <button id="add-to-cart-modal-btn">Thêm vào giỏ</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Giỏ hàng -->
+    <div id="cart" class="cart">
+      <h2>Giỏ hàng</h2>
+      <ul id="cart-items"></ul>
+      <p id="total-price">Tổng tiền: 0đ</p>
+      <button id="checkout-btn">Thanh toán</button>
+      <button id="close-cart-btn">Đóng</button>
+    </div>
+
+    <!-- Modal chi tiết sản phẩm -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+        <button id="close-modal-btn">✖</button>
+        <h3 id="modal-product-name"></h3>
+        <img id="modal-product-image" src="" alt="" />
+        <p id="modal-product-price"></p>
+        <p id="modal-product-description"></p>
+        <button id="add-to-cart-modal-btn">Thêm vào giỏ</button>
+      </div>
+    </div>
+    <h2>Chủ mưu đằng sau cuộc giao dịch trên sàn điện tử</h2>
+    <img src="img/emhai.jpg" alt="chủ mưu" />
+    <pre>
+*** Một người có chủ mưu bán hàng qua camera (bán hàng online qua livestream hoặc video) trên có những đặc điểm sau:
+
+        1. Mục đích Rõ Ràng
+        Người này không chỉ đơn thuần là một người bán hàng, mà còn có chiến lược rõ ràng để thu hút khách hàng. Họ có thể lợi dụng các chiêu trò tâm lý, kịch bản sắp đặt hoặc cách nói chuyện khéo léo để thuyết phục người xem mua sản phẩm.
+        
+        2. Tạo Lòng Tin & Tận Dụng Cảm Xúc
+        Luôn tỏ ra thân thiện, gần gũi để tạo niềm tin với khách hàng.
+        
+        Đánh vào tâm lý sợ bỏ lỡ (FOMO) bằng cách nói rằng sản phẩm sắp hết hàng hoặc có ưu đãi giới hạn.
+        
+        Kích thích sự tò mò, ví dụ như nói “Xem đến cuối để nhận quà” hoặc “Chỉ ai nhanh tay mới mua được giá này!”.
+        
+        3. Sử Dụng Kịch Bản & Hiệu Ứng Đám Đông
+        Các lời thoại đều được chuẩn bị sẵn để dẫn dắt khách hàng.
+        
+        Nếu cần, có thể thuê người vào bình luận giả để tạo cảm giác sản phẩm đang được săn đón.
+        
+        4. Khai Thác Đúng Đối Tượng
+        Họ sẽ nhắm đến những người dễ bị tác động, như người già, người không rành về công nghệ hoặc người ham rẻ.
+        
+        Có thể sử dụng những câu chuyện cá nhân hoặc hoàn cảnh để đánh vào lòng thương hại.
+        
+        5. Bán Hàng Theo Chiêu Trò
+        Dùng các hiệu ứng giật gân như “Giá sốc”, “Không mua là tiếc”, “Chỉ còn 10 cái duy nhất”.
+        
+        Có thể nâng giá sản phẩm lên cao rồi giảm mạnh để tạo cảm giác hời.
+        
+        Một số trường hợp còn lợi dụng hàng giả, hàng kém chất lượng để trục lợi.
+        
+        lưu ý các bạn cẩn thận với người này!</pre
+    >
+
+    <footer>
+      <p>&copy; Cửa hàng của Phúc Hãi</p>
+    </footer>
+
+    <script src="banhang.js"></script>
+  </body>
+</html>
